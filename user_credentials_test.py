@@ -13,8 +13,8 @@ class TestUser(unittest.TestCase):
 		self.assertEqual(self.new_user.first_name,'Erastus')
 		self.assertEqual(self.new_user.last_name,'Nj\'oro\'ge')
 		self.assertEqual(self.new_user.password,'uthiru10')
-
-    def test_save_user(self):
+        
+def test_save_user(self):
 		
 		self.new_user.save_user()
 		self.assertEqual(len(User.users_list),1)
